@@ -1,0 +1,89 @@
+.user1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.9vh;
+    background: linear-gradient(90deg, rgb(49, 197, 171) 0%, rgb(43, 40, 54) 100%);
+}
+.box1 h1{
+    text-align: center;
+    background-color: bisque;
+    margin-bottom: 2rem;
+    color: rgb(36, 54, 72);
+}
+.box1{
+   max-width: 500px;
+   width: 100%;
+   height: 600px;
+   border: 10px solid #ffdb07;
+   border-radius: 20px;
+   background-color: bisque;
+   box-shadow: 10px 10px 20px rgb(190, 235, 9);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main{
+    background-color: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    height: 480px;
+   
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div1{
+    max-width: 450px;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+}
+.div2{
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(14, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.div2 h4{
+   
+   color: #ffffff;
+}
+.btn1 {
+   width: 100px;
+   height: 50px;
+   background-color: red;
+   color: #ffffff;
+   border-radius: 10px;
+   border: none;
+}
+
+.topic{
+    max-width: 370px;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(14, 28, 28);
+    display: flex;
+    color: #ffffff;
+    border: 2px solid white;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.ul{
+    list-style-type: none;
+}

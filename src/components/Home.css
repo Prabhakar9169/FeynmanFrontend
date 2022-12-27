@@ -1,0 +1,35 @@
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.9vh;
+    background: linear-gradient(90deg, rgb(49, 197, 171) 0%, rgb(43, 40, 54) 100%);
+}
+.box h1{
+    text-align: center;
+    background-color: rgb(7, 5, 5);
+    margin-bottom: 2rem;
+    color: white;
+}
+.box{
+   max-width: 500px;
+   width: 100%;
+   height: 400px;
+   border: 10px solid #ffdb07;
+   border-radius: 20px;
+   background-color: bisque;
+   box-shadow: 10px 10px 20px rgb(190, 235, 9);
+}
+
+.form-group h3{
+    text-align: center;
+}
+.form-group input{
+    margin-top: 1rem;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
