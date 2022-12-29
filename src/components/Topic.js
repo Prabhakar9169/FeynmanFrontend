@@ -46,10 +46,9 @@ const handleChange =(e)=>{
 }
 
 const closeModal = ()=>{
-  axios.post("http://localhost:8000/api/v1/topic" , data).then(res=>console.log(res.data))
+  axios.post("https://feynmanbackend.onrender.com/api/v1/topic" , data).then(res=>console.log(res.data))
     setModel({isOpen:false})
    
-  
   }
 
 const open = ()=>{
@@ -76,7 +75,9 @@ const Submit = () =>{
     setModel({isOpen:true})
 }
 
-
+const Dashboard = ()=>{
+  navigate('/dashboard')
+}
 
 
 
@@ -90,7 +91,7 @@ useEffect(()=>{
     <div  className='user2'>
        <div className='box2' >
        <h1>ADD TOPIC</h1>
-
+       <button type="submit" className='btn6' onClick={Dashboard}>Back To Dashboard</button>
         <div className='Topic'>
           <div className='title'>
            <label>Topic : </label>
@@ -123,8 +124,8 @@ useEffect(()=>{
          
         </Modal.Body>
         <Modal.Footer>
-        <Button variant="primary"  onClick={finalSubmit} >Final Submit</Button>
-          <Button variant="secondary"  onClick={closeModal}>Close</Button>
+        <Button variant="primary" className='button6' onClick={finalSubmit} >Final Submit</Button>
+          <Button variant="secondary" className='button7' onClick={closeModal}>Close</Button>
         </Modal.Footer>
       </Modal>
        </div >

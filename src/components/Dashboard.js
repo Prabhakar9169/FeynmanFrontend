@@ -15,7 +15,7 @@ function Dashboard() {
   }
   
  const getData = async()=>{
-  await axios.get("http://localhost:8000/api/v1/topic").then(res=>setData(res.data))
+  await axios.get("https://feynmanbackend.onrender.com/api/v1/topic").then(res=>setData(res.data))
  }
 
  
@@ -24,7 +24,7 @@ function Dashboard() {
    
  console.log(singleData);
  
-// console.log(  data.find(item=>item.name === username) , "jdshkjs");
+
 console.log(data.find(item=>item.name === username) , "hgfhf");
 useEffect(()=>{
   getData()
