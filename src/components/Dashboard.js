@@ -15,7 +15,7 @@ function Dashboard() {
   }
   
  const getData = async()=>{
-  await axios.get("http://localhost:8000/api/v1/topic").then(res=>{
+  await axios.get("https://feynmanbackend.onrender.com/api/v1/topic").then(res=>{
     setData(res.data)
     setSingleData(res.data.filter(item=>item.name == username))
  })
