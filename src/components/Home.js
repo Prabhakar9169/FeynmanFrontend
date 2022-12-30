@@ -21,7 +21,7 @@ const  handleChange = (e)=>{
 const createUser  = async(e)=>{
   e.preventDefault()
   if(data.name === "")  alert("Please Enter Name")
-    await axios.post("https://feynmanbackend.onrender.com/api/v1/user" , data).then(res=>console.log(res.data)).catch(err=>console.log(err.response.data.message))
+    await axios.post("http://localhost:8000/api/v1/user" , data).then(res=>console.log(res.data)).catch(err=>console.log(err.response.data.message))
     navigate(`/dashboard`)
   
 }

@@ -15,20 +15,22 @@ function Dashboard() {
   }
   
  const getData = async()=>{
-  await axios.get("https://feynmanbackend.onrender.com/api/v1/topic").then(res=>setData(res.data))
+  await axios.get("http://localhost:8000/api/v1/topic").then(res=>{
+    setData(res.data)
+    setSingleData(res.data.filter(item=>item.name == username))
+ })
  }
 
  
-  const result = data.find(item=>item.name === username)  
-  console.log(result , "res");
+ 
    
  console.log(singleData);
  
 
-console.log(data.find(item=>item.name === username) , "hgfhf");
+
 useEffect(()=>{
   getData()
-  setSingleData(result)
+  
 },[])
   return (
     <>
@@ -42,7 +44,7 @@ useEffect(()=>{
           <div className='div2'>
             <h4>Topic List</h4>
             <div className='topic'>
-              {data.map(item=>{
+              {singleData.map(item=>{
                 
                 return <ul className='ul'>
                   <li>{item.title } : &nbsp;<span >&nbsp;{item.percentage} %</span></li>

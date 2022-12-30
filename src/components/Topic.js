@@ -46,7 +46,7 @@ const handleChange =(e)=>{
 }
 
 const closeModal = ()=>{
-  axios.post("https://feynmanbackend.onrender.com/api/v1/topic" , data).then(res=>console.log(res.data))
+  axios.post("http://localhost:8000/api/v1/topic" , data).then(res=>console.log(res.data))
     setModel({isOpen:false})
    
   }
